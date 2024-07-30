@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+
+/* simbolo radio */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1d2d4a8;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 5px;
+  }
+  
+  .slider.round:before {
+    border-radius: 30px;
+  }
+
+/* calendário */
+.mes-ativo{
+  /*
+  background: rgb(0,44,255);
+  background: linear-gradient(90deg, rgba(0,44,255,1) 0%, rgba(0,44,255,0.8127626050420168) 6%, rgba(0,44,255,0) 9%); */
+  background: rgb(0,44,255);
+  background: linear-gradient(90deg, rgba(0,44,255,0.8239670868347339) 2%, rgba(0,44,255,0.21612394957983194) 7%);
+
+}
+
+.merdinha{
+  white-space: nowrap;
+  font-size:90% !important;
+  vertical-align:top !important;
+}
+
+.cal-content{
+  text-align: center;
+  white-space: nowrap;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#cal_esc td{
+  padding:7px ;
+}
+#cal_esc table{
+  width:auto;
+}
+
+  table.table.table-bordered.border.border-warning.stripped {
+  border-color: rgb(216, 214, 231) !important;
+}
+
+select[readonly] {
+  background: #eee !important; /*Simular campo inativo - Sugestão @GabrielRodrigues*/
+  pointer-events: none !important;
+  touch-action: none !important;
+}
+
+#calendario table, th, td {
+  border: 1px solid;
+   
+}
+
+#list_cal{
+  justify-content: center !important; 
+  overflow:wrap;
+}
+
+#cal_lis table{
+  width:auto ;
+}
+/* simbolos */
+.simbico{
+
+  max-width: 18px;
+ justify-content: center;
+}
+.simbico_leg{
+  max-width: 20px;
+}
+
+.simbico_leg_edit{
+  max-width: 10%;
+  padding-left: 20px;
+}
+
+/* legenda */
+#leg_table{
+  width:auto !important; 
+  justify-content: center !important; 
+  overflow:wrap;
+}
+#leg_table td{
+  padding:3px !important;
+  margin:3px !important;
+}
+
+
+
+.badge-warning {
+  background-color: #ffdf80!important;
+}
+.perfil-alo{
+
+  padding-top: 30px;
+
+
+}
+.imagem-perfil{
+  width:25vw;
+  padding-left: 15px;
+}
+.simbico_edit{
+
+  width: 50px;
+  padding-right: 10px;
+}
+
+
+/* sidebar */
+
+.sidebar{
+
+    font-family: "Montserrat", sans-serif;
+
+}
+.sidebar-link{
+  text-decoration: none !important;
+}
+a.sidebar-link:hover {
+  background-color: #1b2631;
+}
+
+li.sidebar-item:hover {
+    background-color: #1b2631;
+}
+/* crud */
+
+.table-all {
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+}
+.td-indicador{
+
+    font-family: 'Raleway', sans-serif;
+}
+.td-info{
+
+    font-family: 'Roboto', sans-serif;
+}
+.td-center{
+
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+}
+.td-info-center {
+
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+.view-leg{
+
+    font-family: 'Roboto', sans-serif;
+}
+.edit-leg{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.simbolo{
+
+    text-align: center;
+}
+
+/* content */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap);
+
+
+.home{
+    
+    font-family: 'Raleway', sans-serif;
+
+}
+.evento{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.legendas{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.titulo{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.btn{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+}
+
+
+
+.footer{
+
+    font-family: "Montserrat", sans-serif;
+}
+
+/* cadastro */
+
+.td-titulo{
+
+    font-family: 'Raleway', sans-serif;
+
+}
+.font-info{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.cor-leg{
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+.titulo{
+   
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.botao-cad{
+
+    display: flex;
+   justify-content: flex-end;
+   
+}
+.titulo-pos{
+    padding-top: 20px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    padding-right: 125px;
+  
+}
+.botao-leg{
+    display: flex;
+    padding-top: 25px;
+}
+
+.mas-fem{
+
+    font-family: 'Roboto', sans-serif;
+    padding-top: 7px;
+}
+.teste-aq{
+
+    padding-right: 20px;
+}
+
+.BirthdayDatePicker .ui-datepicker-year
+{
+ display:none;   
+}

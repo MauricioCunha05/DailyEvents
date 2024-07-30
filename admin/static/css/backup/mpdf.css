@@ -1,0 +1,40 @@
+#calendario{
+    margin-top:21px;
+}
+
+#list_cal{
+    margin-top:30px;
+    margin-right:auto;
+    margin-left:auto;
+    width: 98%;
+    
+}
+
+#leg_table{
+    margin-right:auto;
+    margin-left:auto;
+    width: 98%;
+    
+}
+
+
+  table tr {
+    border-bottom: 1px solid;
+    color: black
+  }
+
+
+  .meses, #leg{
+    border-right: 1px solid;
+    
+  }
+
+.cal-cab{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    color: black
+}
+
+.simbico{
+    width: 10%;
+}

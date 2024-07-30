@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap);
+
+
+.home{
+    
+    font-family: 'Raleway', sans-serif;
+
+}
+.evento{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.legendas{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.titulo{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.btn{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+}
+
+
+
+.footer{
+
+    font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,160 @@
+/* simbolo radio */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1d2d4a8;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 5px;
+  }
+  
+  .slider.round:before {
+    border-radius: 30px;
+  }
+
+/* simbolo radio */
+
+/* calendário */
+.cal-content{
+  text-align: center;
+}
+
+
+
+  table.table.table-bordered.border.border-warning.stripped {
+  border-color: rgb(216, 214, 231) !important;
+}
+/* calendário */
+
+select[readonly] {
+  background: #eee !important; /*Simular campo inativo - Sugestão @GabrielRodrigues*/
+  pointer-events: none !important;
+  touch-action: none !important;
+}
+
+#calendario table, th, td {
+  border: 1px solid;
+   
+}
+.table{
+  width:30%px !important; 
+}
+
+#list_cal{
+  height:70vh !important; 
+  width:60% !important; 
+  justify-content: center !important; 
+  overflow:wrap;
+}
+
+
+/* simbolos */
+.simbico{
+  max-width: 15px;
+}
+.simbico_leg{
+  max-width: 20px;
+}
+
+.simbico_leg_edit{
+  max-width: 50%;
+  padding-left: 20px;
+}
+
+/* legenda */
+#leg_table{
+  height:30vh !important; 
+  width:70% !important; 
+  justify-content: center !important; 
+  overflow:wrap;
+}
+
+#feriados{
+  height:30vh !important; 
+  width:70% !important; 
+  justify-content: center !important; 
+  overflow:wrap;
+}
+
+.badge-warning {
+  background-color: #ffdf80!important;
+}
+.perfil-alo{
+
+  padding-top: 120px;
+
+
+}
+.imagem-perfil{
+
+  padding-left: 15px;
+}
+
+input {
+  border: 1px solid #ecf0f1;
+  color: #00A79D;
+}
+
+input[type=date] {
+  text-align: right;
+}
+
+input[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+  padding: 11px;
+}
+
+input[type="date"]:focus:before {
+    color: #00a79d;
+}

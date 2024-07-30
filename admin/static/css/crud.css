@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+
+.table-all {
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+}
+.td-indicador{
+
+    font-family: 'Raleway', sans-serif;
+}
+.td-info{
+
+    font-family: 'Roboto', sans-serif;
+}
+.td-center{
+
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+}
+.td-info-center {
+
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+.view-leg{
+
+    font-family: 'Roboto', sans-serif;
+}
+.edit-leg{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.simbolo{
+
+    text-align: center;
+}
