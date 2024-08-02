@@ -1,4 +1,5 @@
 <?php
+
 if(!isset($_SESSION)) session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -86,10 +87,11 @@ $mpdf_acad->WriteHTML($_SESSION['calendario_lis'],2);
 
 
 if(!empty($_GET['value']) && $_GET['value'] == 'nova_versao'){
-    mkdir("C:/xampp/htdocs/admin/static/img/versao/".$_SESSION['sigla_ue']);
-    mkdir("C:/xampp/htdocs/admin/static/img/versao/".$_SESSION['sigla_ue']."/".$_SESSION['ano']."");
-    $mpdf->Output('C:/xampp/htdocs/admin/static/img/versao/'.$_SESSION['sigla_ue'].'/'.$_SESSION['ano'].'/'.$_SESSION['sigla_ue'].' - '.$_SESSION['ano'].' v'.$_GET['versao'].' - esc.pdf', 'F');
-    $mpdf_acad->Output('C:/xampp/htdocs/admin/static/img/versao/'.$_SESSION['sigla_ue'].'/'.$_SESSION['ano'].'/'.$_SESSION['sigla_ue'].' - '.$_SESSION['ano'].' v'.$_GET['versao'].' - acad.pdf', 'F');
+    echo(__DIR__."\\img\\versao\\".$_SESSION['sigla_ue']);
+    mkdir(__DIR__."\\img\\versao\\".$_SESSION['sigla_ue']);
+    mkdir(__DIR__."\\img\\versao\\".$_SESSION['sigla_ue']."\\".$_SESSION['ano']."");
+    $mpdf->Output(__DIR__.'\\img\\versao\\'.$_SESSION['sigla_ue'].'\\'.$_SESSION['ano'].'\\'.$_SESSION['sigla_ue'].' - '.$_SESSION['ano'].' v'.$_GET['versao'].' - esc.pdf', 'F');
+    $mpdf_acad->Output(__DIR__.'\\img\\versao\\'.$_SESSION['sigla_ue'].'\\'.$_SESSION['ano'].'\\'.$_SESSION['sigla_ue'].' - '.$_SESSION['ano'].' v'.$_GET['versao'].' - acad.pdf', 'F');
     header('Location: dash.php?page=home&calendario='.$_SESSION['cal_atual'].'&ue='.mysqli_fetch_array($ue)[0]);}
 else{
     $mpdf_acad->Output();
